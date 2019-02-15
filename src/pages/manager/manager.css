@@ -1,0 +1,25 @@
+.manager {
+    margin-top: 20vh
+}
+
+.manager input {
+    border: 1px solid #0088CE;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 5px;
+    ;
+}
+
+.list {
+    margin-top: 5vh;
+}
+
+.list-table {
+    width: 33%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.list-delete {
+    color: #0088CE
+}
