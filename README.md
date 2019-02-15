@@ -56,7 +56,7 @@ npm  run eject
  
   ["import", {"libraryName": "antd-mobile", "libraryDirectory":"es", "style": true}],
 ```
-```
+```js
 {
   ...
     {
@@ -98,7 +98,7 @@ npm  run eject
 **主题设置**
 
 首先在 package.json中配置：
-```
+```js
     {
         ...
           "theme": {
@@ -109,7 +109,7 @@ npm  run eject
     }
 ```
 在webpack.config.js文件中 获取主题色，在rules配置主题色
-```
+```js
     //  antd mobile 主题色定制
     const theme = require('./../package.json').theme;
     
@@ -151,7 +151,7 @@ npm  run eject
  在实际应用过程中需要请求后台接口，需要一定代理接口
  代理之前确保 已经  npm run eject
 1.  create-react-app 的版本在低于 2.0 的时候可以在 package.json 增加 proxy 配置， 配置成如下：
-```
+```js
     "proxy":{
         "/api/**":{
           "target":"http://api.sqydt.easysq.cn/api/",
@@ -167,7 +167,7 @@ npm  run eject
 ```
  $  npm install http-proxy-middleware  --save
 ```
-```
+```js
     const proxy = require("http-proxy-middleware");
     
     module.exports = function(app) {
@@ -202,7 +202,7 @@ $ npm install react-redux redux redux-thunk  --save-dev
 在最新的脚手架中webpack已经配置sass，只需要
 ```
  $  npm  install  sass-loader  --save
-
+```
 
 
  
